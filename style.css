@@ -10,7 +10,7 @@ body {
   background-color: aliceblue;
   font-family: "Poppins", serif;
   color: black;
-  height: 100vh;
+  position: relative;
 }
 
 nav {
@@ -165,12 +165,19 @@ section .sectionB .hero {
   }
 }
 section .sectionB .hero .hero1 {
+  color: blue;
   width: 13%;
 }
 @media (max-width: 993px) {
   section .sectionB .hero .hero1 {
     display: none;
   }
+}
+section .sectionB .hero .hero1 .main {
+  color: blue;
+}
+section .sectionB .hero .hero1 .favourites {
+  color: blue;
 }
 section .sectionB .hero .hero2 {
   padding: 1rem;
@@ -298,4 +305,82 @@ section .sectionB .hero .MAILA {
   padding: 0.6rem;
   border-radius: 0.5rem;
   color: white;
+}
+
+.outLook {
+  background-color: rgba(0, 0, 0, 0.585);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  visibility: hidden;
+}
+.outLook .look {
+  background-color: white;
+  width: 350px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease;
+  transform: translate(-50%, -50%);
+  gap: 0.5rem;
+  position: absolute;
+  top: -90%;
+  left: 50%;
+}
+.outLook .mail2 {
+  display: flex;
+}
+.outLook .mail {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.outLook .mail3 {
+  display: flex;
+  justify-content: space-between;
+}
+.outLook .mail3 .maili {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.outLook .loginBtn {
+  border: none;
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+  font-weight: bolder;
+  border-radius: 0.5rem;
+}
+.outLook form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.outLook form .gmail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.outLook form .gmail input {
+  border: 1px solid grey;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+.outLook form .accountBtn {
+  border: none;
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+  font-weight: bolder;
+  border-radius: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

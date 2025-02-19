@@ -1,0 +1,82 @@
+.outLook {
+  background-color: rgba(0, 0, 0, 0.585);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  // transition: all 1s ease;
+  // opacity: 0;
+  visibility: hidden;
+  // min-height: 100vh;
+  .look {
+    background-color: white;
+    width: 350px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s ease;
+    transform: translate(-50%, -50%);
+    // align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    top: -90%;
+    // right: ;
+    left: 50%;
+  }
+  .mail2 {
+    display: flex;
+  }
+  .mail {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+  }
+  .mail3 {
+    display: flex;
+    justify-content: space-between;
+    // gap: 1rem;
+    .maili {
+      width: 25px;
+      height: 25px;
+      object-fit: cover;
+    }
+  }
+  .loginBtn {
+    border: none;
+    padding: 1rem;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 0.7rem;
+    .gmail {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      // align-items: center;
+      input {
+        border: 1px solid grey;
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+      }
+    }
+    .accountBtn {
+      border: none;
+      padding: 1rem;
+      background-color: blue;
+      color: white;
+      font-weight: bolder;
+      border-radius: 0.5rem;
+    }
+  }
+}
